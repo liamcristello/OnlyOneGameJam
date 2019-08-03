@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         playerVelocity = Vector3.zero;
+        rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
