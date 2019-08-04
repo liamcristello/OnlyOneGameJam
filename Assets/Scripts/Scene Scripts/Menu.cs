@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("exit");
     }
 
     public void ReturnToMenu()
@@ -18,5 +19,6 @@ public class Menu : MonoBehaviour
     public void StartGame() 
     {
         SceneManager.LoadScene("OpeningScene");
+        Debug.Log("start");
     }
 }
