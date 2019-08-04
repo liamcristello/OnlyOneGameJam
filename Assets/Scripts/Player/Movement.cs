@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Script to manage player movement.
 public class Movement : MonoBehaviour
@@ -42,6 +43,8 @@ public class Movement : MonoBehaviour
         // Take in x-direction input and affect the player's x-direction speed through rb2d.
         playerVelocity.x = Input.GetAxis("Horizontal") * maxWalkSpeed; 
         rb2d.velocity = playerVelocity;
+
+        Debug.Log("Current Scene: " + SceneManager.GetActiveScene().buildIndex);
 
         if (playerVelocity.x != 0) {
             anim.SetBool("isWalking", true);

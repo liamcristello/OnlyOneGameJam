@@ -28,7 +28,8 @@ public class FadeOut : MonoBehaviour
 
         if (sceneChange) 
         {
-           change = sceneChange;        
+            Debug.Log("Change scenes!");
+            change = sceneChange;        
         }
         
         //move the player up or down a level
@@ -38,14 +39,25 @@ public class FadeOut : MonoBehaviour
 
     void LoadNextScene() 
     {
-        StartCoroutine(WaitFor());
+        change = false;
+       // StartCoroutine(WaitFor());
+        Invoke("ChangeScene", 1f);
     }
-    IEnumerator WaitFor() {
+
+    void ChangeScene() {
+
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+    // IEnumerator WaitFor() {
       
-        yield return null;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
-    }
+    //     yield return null;
+    //     
+    //     Debug.Log("Load scene: " + nextSceneIndex);
+    //     Debug.Log("Change flag: " + change);
+    //     SceneManager.LoadScene(nextSceneIndex);
+    //     Debug.Log("Change flag after: " + change);
+    // }
 
     // Update is called once per frame
     void Update()
@@ -72,6 +84,7 @@ public class FadeOut : MonoBehaviour
         }
 
         if (change)
+            Debug.Log("Load the next scene.");
             LoadNextScene();
     }
 }
