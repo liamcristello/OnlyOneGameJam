@@ -22,10 +22,11 @@ public class DisplayText : MonoBehaviour
 
     // bool to determine whether to show text and related UI
     public bool show = false;
-    public bool hasHit = true;
+    public bool hasHit = false;
 
-    // Begin the text event
-    void BeginText()
+
+    //Fake start method
+    public void FakeStart() 
     {
         // Stops the player from moving during dialogue
         GameObject.Find("Player").GetComponent<Movement>().enabled = false;
@@ -35,27 +36,31 @@ public class DisplayText : MonoBehaviour
 
         // Sets the display object's text to nothing by default
         display.text = "";
+
+        //start
+        StartCoroutine(Type());
+        hasHit = true;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
-        // When E is pressed, text/UI should display
-        if (Input.GetKeyDown(KeyCode.E) && ObjectManager.inZone) {
-            Display(hasHit);
-            hasHit = false;
-        }
+    {   
+        if (hasHit) {
+            // When E is pressed, text/UI should display
+            if (Input.GetKeyDown(KeyCode.E)) {
+                Display();
+            }
 
-        // If text and UI are being shown
-        if (show) {
-            // If all current text is displayed, display the continue button
-            if (display.text == words[index]) {
-                proceed.SetActive(true);
+            // If text and UI are being shown
+            if (show) {
+                // If all current text is displayed, display the continue button
+                if (display.text == words[index]) {
+                    proceed.SetActive(true);
 
-                // When continue button is pressed here, begin to display next batch of text
-                if (Input.GetKeyDown(KeyCode.E)) { ///Change this to an ONClick handler and maybe the enter button>
-                    Next();
+                    // When continue button is pressed here, begin to display next batch of text
+                    if (Input.GetKeyDown(KeyCode.E)) { ///Change this to an ONClick handler and maybe the enter button>
+                        Next();
+                    }
                 }
             }
         }
@@ -98,14 +103,10 @@ public class DisplayText : MonoBehaviour
     }
 
     // When text should be displayed, start the coroutine and turn on UI
-    public void Display(bool hit = false) {
-       if (hit) {
-            BeginText();
-            StartCoroutine(Type());
-            show = true;
-       } else {
-           Debug.Log("PLEASE");
-       }
+    public void Display(bool hit = false) 
+    {
+        StartCoroutine(Type());
+        show = true;
         
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectManager : MonoBehaviour
 {
     // Reference to GameObject for purposes of displaying dialogue/text
-    public DisplayText displayText;
+    [SerializeField] private DisplayText displayText;
 
     // bool to track if player is in collider trigger to start dialogue/text
     public static bool inZone;
@@ -15,12 +15,6 @@ public class ObjectManager : MonoBehaviour
     void Start()
      {
          inZone = false;
-     }
- 
-    // Update is called once per frame
-    void Update()
-     {
-         
      }
 
     // Called when something enters this object's box-collider trigger.
@@ -33,12 +27,13 @@ public class ObjectManager : MonoBehaviour
      }
      
      // Called when something remains in this object's box-collider trigger.
-    //  void OnTriggerStay2D (Collider2D other) {
-    //      // If the Collider2D belongs to the player
-    //      if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E)) {
-    //          Debug.Log ("Player has interacted with " + this.name + ".");
-    //      }
-    //  }
+     void OnTriggerStay2D (Collider2D other) {
+         // If the Collider2D belongs to the player
+         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E)) {
+             Debug.Log ("Player has interacted with " + this.name + ".");
+             displayText.FakeStart();
+         }
+     }
 
      // Called when something exits this object's box-collider trigger.
      void OnTriggerExit2D (Collider2D other) {
