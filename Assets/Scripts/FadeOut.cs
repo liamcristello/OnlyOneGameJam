@@ -9,12 +9,14 @@ public class FadeOut : MonoBehaviour
     bool isFading;
     Color c;
     public float changeVal;
+    bool hasPeaked;
     // Start is called before the first frame update
     void Start()
     {
         c = image.color;
         c.a = 0;
         isFading = false;
+        hasPeaked = false;
     }
 
     // Update is called once per frame
@@ -28,15 +30,24 @@ public class FadeOut : MonoBehaviour
 
         if (isFading) {
             Debug.Log("Alpha value is " + c.a);
-            c.a += changeVal;
+            if (!hasPeaked) {
+                c.a += changeVal;
+            }
+            if (hasPeaked) {
+                hasPeaked = true;
+                c.a -= changeVal;
+            }
+            if (c.a <= 0) {
+                isFading = false;
+            }
         }
 
-        if (c.a == 1) {
-            isFading = false;
+        if (c.a >= 1) {
+            hasPeaked = true;
         }
     }
 
     void CallFade() {
-        
+
     }
 }
