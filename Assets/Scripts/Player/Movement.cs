@@ -59,6 +59,7 @@ public class Movement : MonoBehaviour
     public static void ChangeFloors(bool moveUp) // true for yes
     {
         switchFloor = true;
+        Debug.Log("Moved from: " + playerLocation);
         
         if (moveUp && floor < 3)
             floor ++;
@@ -87,5 +88,6 @@ public class Movement : MonoBehaviour
                 Debug.Log("how");
                 break;
         }
+        Debug.Log("Moved to: " + playerLocation);
     }
 }

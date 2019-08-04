@@ -32,6 +32,7 @@ public class FadeOut : MonoBehaviour
         }
         
         //move the player up or down a level
+        if(moveUp) Debug.Log("Switch floors!");
         Movement.ChangeFloors(moveUp);
     }
 

@@ -8839,57 +8839,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5868270450219919958}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2124159930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124159929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb38f34b19b151d45a1519a144a342b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 317445905}
-  lines:
-  - '*Yawn*'
-  - Huh? what's this?
-  - A note?
-  - "Note: \tIt's been such a long time. I'm writing this down in case I forget. I
-    left it in the garage."
-  - "The garage..? What could it possibly be in there\u2026?"
---- !u!95 &2124159931
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124159929}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b2ff6ccefa36804ebcb419ff6e0b70f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2124159935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124159929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5868270450219919958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8957,16 +8906,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788397, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788397, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5868270451873788392, guid: 7da840173c6f7a44388f8a0440bc5e00,
         type: 3}
       propertyPath: floorLocations.Array.data[0]
@@ -8987,76 +8926,9 @@ PrefabInstance:
       propertyPath: floorLocations.Array.data[3]
       value: 
       objectReference: {fileID: 1883092031}
-    - target: {fileID: 5868270451873788396, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788396, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788396, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788396, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 2124159930, guid: 7da840173c6f7a44388f8a0440bc5e00, type: 3}
+      propertyPath: dialogue
       value: 
-      objectReference: {fileID: -4782404408700663551, guid: f31294ff5a7a3c2448542868cf948f46,
-        type: 3}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.11184549
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.6083332
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 3.1502876
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.030036747
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868270451873788394, guid: 7da840173c6f7a44388f8a0440bc5e00,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.1011525
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 317445905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da840173c6f7a44388f8a0440bc5e00, type: 3}
