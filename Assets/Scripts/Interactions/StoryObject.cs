@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoryObject : ObjectManager
+public class StoryObject : MonoBehaviour
 {
     public static void NextScene() 
     {

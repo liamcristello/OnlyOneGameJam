@@ -9,25 +9,34 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public Image panel; 
     private Queue<string> sentences;
-    private bool show;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
         dialogueText.text = "";
+        panel.enabled = false;
     }
 
     public void StartDialogue(Dialogue dialogue) {
         
+        GameObject.Find("Player").GetComponent<Movement>().enabled = false;
         panel.enabled = true;
         sentences.Clear();
-        show = true;
+        
 
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
 		}
+    }
+
+    public void OpeningandClosing(string[] words) 
+    {
+        var d = new Dialogue();
+        d.sentences = words;
+
+        StartDialogue(d);
     }
 
    public void DisplayNextSentence ()

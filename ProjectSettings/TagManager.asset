@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Object
   - Stairs
+  - StoryObject
+  - OpeningCutScene
   layers:
   - Default
   - TransparentFX

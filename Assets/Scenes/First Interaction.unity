@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &17511002
 Transform:
   m_ObjectHideFlags: 0
@@ -147,10 +147,83 @@ Transform:
   m_LocalPosition: {x: 5.8731556, y: -0.27826327, z: -2.2311335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1062101058}
+  - {fileID: 1186939223}
   m_Father: {fileID: 317445904}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &31705642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31705643}
+  - component: {fileID: 31705645}
+  - component: {fileID: 31705644}
+  m_Layer: 0
+  m_Name: Grill
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31705643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31705642}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.8, y: 13.2, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 545249609}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31705644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31705642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - I don't think I've ever used this.
+--- !u!61 &31705645
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31705642}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.036790133, y: -0.1312114}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16798559, y: 1.5116808}
+  m_EdgeRadius: 0
 --- !u!4 &37484051
 Transform:
   m_ObjectHideFlags: 0
@@ -194,7 +267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &78505258
 Transform:
   m_ObjectHideFlags: 0
@@ -210,84 +283,6 @@ Transform:
   m_Father: {fileID: 317445904}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &124956396
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 730053002}
-  - component: {fileID: 124956399}
-  - component: {fileID: 124956398}
-  - component: {fileID: 124956397}
-  m_Layer: 0
-  m_Name: Couch (3)
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &124956397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124956396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &124956398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124956396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
---- !u!61 &124956399
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124956396}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
-  m_EdgeRadius: 0
 --- !u!4 &162714065
 Transform:
   m_ObjectHideFlags: 0
@@ -571,7 +566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &242822351
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +579,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2054644932}
+  - {fileID: 1132045494}
   m_Father: {fileID: 317445904}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -595,7 +591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709089177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
+  m_LocalPosition: {x: -31.1, y: 4.6, z: 15.3125}
   m_LocalScale: {x: 40.437004, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 1684105101}
@@ -641,7 +637,7 @@ Transform:
   - {fileID: 535066408}
   - {fileID: 242822351}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317445905
 MonoBehaviour:
@@ -655,6 +651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98f5e17f8f4f184fa4d5eb8330f8c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueText: {fileID: 179244468}
+  panel: {fileID: 224279142}
 --- !u!1 &379146141
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +663,6 @@ GameObject:
   m_Component:
   - component: {fileID: 162714065}
   - component: {fileID: 379146144}
-  - component: {fileID: 379146143}
   - component: {fileID: 379146142}
   m_Layer: 0
   m_Name: Couch
@@ -673,7 +670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &379146142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,30 +680,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 379146141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &379146143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379146141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - Don't really like the color, but it's so comfortable.
+    - I've fallen asleep on it reading many times.
 --- !u!61 &379146144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -818,7 +798,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2054644932}
   - component: {fileID: 515032771}
-  - component: {fileID: 515032770}
   - component: {fileID: 515032769}
   m_Layer: 0
   m_Name: Coat Rack
@@ -826,7 +805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &515032769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,30 +815,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 515032768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &515032770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515032768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - "I should probably check out the garage.\r\n"
+    - "I can go out later.\r"
 --- !u!61 &515032771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -873,7 +835,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
+  m_Offset: {x: -0.0031938665, y: -0.23304754}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -884,7 +846,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
+  m_Size: {x: 0.07839552, y: 1.5343114}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -1012,7 +974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &535066408
 Transform:
   m_ObjectHideFlags: 0
@@ -1024,7 +986,8 @@ Transform:
   m_LocalPosition: {x: 5.8731556, y: -0.27826327, z: -2.2311335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 730053002}
+  - {fileID: 1743429971}
+  - {fileID: 1448762461}
   m_Father: {fileID: 317445904}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1043,7 +1006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &545249609
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,7 +1018,8 @@ Transform:
   m_LocalPosition: {x: 5.8731556, y: -0.27826327, z: -2.2311335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 945643574}
+  - {fileID: 1722153963}
+  - {fileID: 31705643}
   m_Father: {fileID: 317445904}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1083,7 +1047,6 @@ GameObject:
   m_Component:
   - component: {fileID: 575491948}
   - component: {fileID: 584694847}
-  - component: {fileID: 584694846}
   - component: {fileID: 584694845}
   m_Layer: 0
   m_Name: Painting
@@ -1091,7 +1054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &584694845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,30 +1064,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 584694844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &584694846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584694844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - I don't remember buying this.
+    - Probably came with the house.
 --- !u!61 &584694847
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1138,7 +1084,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06289889, y: -0.6818286}
+  m_Offset: {x: -0.06149903, y: -0.6818286}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -1149,7 +1095,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18296054, y: 2.160309}
+  m_Size: {x: 0.13536581, y: 2.160309}
   m_EdgeRadius: 0
 --- !u!1 &702324673
 GameObject:
@@ -1161,7 +1107,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1496683798}
   - component: {fileID: 702324676}
-  - component: {fileID: 702324675}
   - component: {fileID: 702324674}
   m_Layer: 0
   m_Name: Table/Chairs
@@ -1169,7 +1114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &702324674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1179,30 +1124,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 702324673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &702324675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702324673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - "I got these for a good price, I'm happy they lasted this long.\r"
+    - "How long have I had them for?\r"
+    - '...'
+    - "I can't remember.\r"
 --- !u!61 &702324676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1239,7 +1169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 272791438}
   - component: {fileID: 709089180}
-  - component: {fileID: 709089179}
   - component: {fileID: 709089178}
   m_Layer: 0
   m_Name: Shower
@@ -1247,7 +1176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &709089178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,30 +1186,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 709089177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &709089179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709089177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - I'll shower later.
 --- !u!61 &709089180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1294,7 +1205,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
+  m_Offset: {x: -0.025591336, y: -0.029374689}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -1305,22 +1216,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
+  m_Size: {x: 0.12878992, y: 1.5795739}
   m_EdgeRadius: 0
---- !u!4 &730053002
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124956396}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
-  m_LocalScale: {x: 40.437004, y: 5, z: 0}
-  m_Children: []
-  m_Father: {fileID: 535066408}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &810949334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &810949335
 Transform:
   m_ObjectHideFlags: 0
@@ -1365,7 +1262,7 @@ GameObject:
   - component: {fileID: 819056119}
   m_Layer: 0
   m_Name: 2/3 Stairs
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1571,7 +1468,7 @@ Transform:
   - {fileID: 875502322}
   - {fileID: 1939386290}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &899857389
 MonoBehaviour:
@@ -1610,7 +1507,6 @@ GameObject:
   m_Component:
   - component: {fileID: 845129121}
   - component: {fileID: 915778554}
-  - component: {fileID: 915778553}
   - component: {fileID: 915778552}
   m_Layer: 0
   m_Name: Stove
@@ -1618,7 +1514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &915778552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1628,30 +1524,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 915778551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &915778553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915778551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - When was the last time I cooked?
 --- !u!61 &915778554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1693,7 +1571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &923184952
 Transform:
   m_ObjectHideFlags: 0
@@ -7249,20 +7127,6 @@ Transform:
   m_Father: {fileID: 1170099305}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &945643574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083085283}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
-  m_LocalScale: {x: 40.437004, y: 5, z: 0}
-  m_Children: []
-  m_Father: {fileID: 545249609}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974492777
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,32 +7141,12 @@ GameObject:
   - component: {fileID: 974492779}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Object
+  m_TagString: StoryObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &974492778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974492777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &974492779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7314,7 +7158,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04efdec211fab5d43b578c46e12234cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+--- !u!114 &974492779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974492777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - There's something in the windshield.
+    - Another note?
+    - "Note: Not here either\u2026 I must have misplaced it?"
+    - "MC]: What\u2026? Did someone break in?"
+    - '[MC]: What was that? Is someone in the house?'
 --- !u!61 &974492780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7328,7 +7190,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
+  m_Offset: {x: 0.14788324, y: -0.10858071}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -7339,7 +7201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
+  m_Size: {x: 0.34135407, y: 1.7832472}
   m_EdgeRadius: 0
 --- !u!1 &978062124
 GameObject:
@@ -7398,7 +7260,7 @@ GameObject:
   - component: {fileID: 1010581439}
   m_Layer: 0
   m_Name: 1/2 Stairs
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7497,25 +7359,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067236344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
+  m_LocalPosition: {x: -23.3, y: 5.1, z: 15.3125}
   m_LocalScale: {x: 40.437004, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 1684105101}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1062101058
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082991025}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
-  m_LocalScale: {x: 40.437004, y: 5, z: 0}
-  m_Children: []
-  m_Father: {fileID: 17511002}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067236344
 GameObject:
@@ -7527,7 +7375,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1061623561}
   - component: {fileID: 1067236347}
-  - component: {fileID: 1067236346}
   - component: {fileID: 1067236345}
   m_Layer: 0
   m_Name: Toliet
@@ -7535,7 +7382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1067236345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7545,30 +7392,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067236344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &1067236346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067236344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - I don't have to go.
 --- !u!61 &1067236347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7582,7 +7411,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
+  m_Offset: {x: -0.09698342, y: -0.108581126}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -7593,85 +7422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
-  m_EdgeRadius: 0
---- !u!1 &1083085283
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 945643574}
-  - component: {fileID: 1083085286}
-  - component: {fileID: 1083085285}
-  - component: {fileID: 1083085284}
-  m_Layer: 0
-  m_Name: Couch (2)
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1083085284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083085283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &1083085285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083085283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
---- !u!61 &1083085286
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083085283}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
+  m_Size: {x: 0.11479148, y: 1.4211609}
   m_EdgeRadius: 0
 --- !u!1 &1118010780
 GameObject:
@@ -7748,6 +7499,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118010780}
   m_CullTransparentMesh: 0
+--- !u!1 &1132045493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132045494}
+  - component: {fileID: 1132045496}
+  - component: {fileID: 1132045495}
+  m_Layer: 0
+  m_Name: Painting
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1132045494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132045493}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.9, y: 17.5, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 242822351}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1132045495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132045493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - I really like this one.
+--- !u!61 &1132045496
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132045493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06289889, y: -0.6818286}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.18296054, y: 2.160309}
+  m_EdgeRadius: 0
 --- !u!1 &1150055759
 GameObject:
   m_ObjectHideFlags: 0
@@ -7779,7 +7603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Bed
     sentences:
     - "I just woke up.\r"
     - "I'm not tired.\r"
@@ -7796,7 +7619,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000507921, y: -0.15952945}
+  m_Offset: {x: 0.015317466, y: -0.15952945}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7807,7 +7630,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26329798, y: 1.3190589}
+  m_Size: {x: 0.2316472, y: 1.3190589}
   m_EdgeRadius: 0
 --- !u!1 &1170099304
 GameObject:
@@ -7843,6 +7666,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1186939222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186939223}
+  - component: {fileID: 1186939225}
+  - component: {fileID: 1186939224}
+  m_Layer: 0
+  m_Name: Junk
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1186939223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186939222}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10, y: -1.7, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 17511002}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186939224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186939222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "I should organize this at some point..\r\n"
+    - "I'll leave myself a note.\r"
+--- !u!61 &1186939225
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186939222}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.006605029, y: -0.42540616}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32196838, y: 1.6474642}
+  m_EdgeRadius: 0
 --- !u!1 &1256168131
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,7 +7771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: desk
     sentences:
     - "I didn't put that not there.\r"
     - "Maybe I should go to the garage?\r"
@@ -7928,7 +7824,6 @@ GameObject:
   m_Component:
   - component: {fileID: 993693505}
   - component: {fileID: 1310840597}
-  - component: {fileID: 1310840596}
   - component: {fileID: 1310840595}
   m_Layer: 0
   m_Name: Microwave
@@ -7936,7 +7831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1310840595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7946,30 +7841,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1310840594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &1310840596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310840594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - My trusted friend. Always there for me to heat up old food.
 --- !u!61 &1310840597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8040,6 +7917,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1448762460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448762461}
+  - component: {fileID: 1448762463}
+  - component: {fileID: 1448762462}
+  m_Layer: 0
+  m_Name: File Cabinet
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448762461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448762460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.7, y: 6.5, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 535066408}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448762462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448762460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - God, what is even in here?
+--- !u!61 &1448762463
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448762460}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.003193913, y: -0.3801452}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.05599806, y: 1.5569422}
+  m_EdgeRadius: 0
 --- !u!1 &1452139840
 GameObject:
   m_ObjectHideFlags: 0
@@ -8097,7 +8047,7 @@ GameObject:
   - component: {fileID: 1561357355}
   m_Layer: 0
   m_Name: 0/1 Stairs
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8165,7 +8115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 46669965}
   - component: {fileID: 1565207806}
-  - component: {fileID: 1565207805}
   - component: {fileID: 1565207804}
   m_Layer: 0
   m_Name: Fridge
@@ -8173,7 +8122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1565207804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8183,30 +8132,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565207803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &1565207805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565207803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - "Empty. Save for some frozen dinners and leftover takeout.\r\n"
+    - "I should go shopping\r."
 --- !u!61 &1565207806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8327,7 +8259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1684105101
 Transform:
   m_ObjectHideFlags: 0
@@ -8408,7 +8340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: wardrobe
     sentences:
     - 'I don''t have too many clothes.
 
@@ -8454,6 +8385,155 @@ Transform:
   m_Father: {fileID: 1018605575}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1722153962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722153963}
+  - component: {fileID: 1722153965}
+  - component: {fileID: 1722153964}
+  m_Layer: 0
+  m_Name: Plant
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722153963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722153962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.3, y: 14.2, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 545249609}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1722153964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722153962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - I'm surprised I haven't killed it yet.
+    - 'Does it need more water..?
+
+'
+--- !u!61 &1722153965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722153962}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.064786956, y: -0.38014567}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13998866, y: 1.5569432}
+  m_EdgeRadius: 0
+--- !u!1 &1743429970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743429971}
+  - component: {fileID: 1743429973}
+  - component: {fileID: 1743429972}
+  m_Layer: 0
+  m_Name: Computer
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743429971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743429970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.8, y: 6.8, z: 15.3125}
+  m_LocalScale: {x: 40.437008, y: 5, z: 0}
+  m_Children: []
+  m_Father: {fileID: 535066408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743429972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743429970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Wasted many an hour on this thing.
+--- !u!61 &1743429973
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743429970}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.037401624, y: -0.4140917}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11479145, y: 1.6248353}
+  m_EdgeRadius: 0
 --- !u!1 &1883092031
 GameObject:
   m_ObjectHideFlags: 0
@@ -8698,7 +8778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1980559614
 Transform:
   m_ObjectHideFlags: 0
@@ -8819,7 +8899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515032768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
+  m_LocalPosition: {x: 1.3, y: -3.4, z: 15.3125}
   m_LocalScale: {x: 40.437004, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 242822351}
@@ -8900,84 +8980,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079745265}
   m_CullTransparentMesh: 0
---- !u!1 &2082991025
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1062101058}
-  - component: {fileID: 2082991028}
-  - component: {fileID: 2082991027}
-  - component: {fileID: 2082991026}
-  m_Layer: 0
-  m_Name: Couch (1)
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2082991026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082991025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &2082991027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082991025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
---- !u!61 &2082991028
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082991025}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0066050217, y: -0.09726581}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32196838, y: 0.9911836}
-  m_EdgeRadius: 0
 --- !u!4 &2117279838
 Transform:
   m_ObjectHideFlags: 0
@@ -8986,7 +8988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974492777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.576843, y: -13.881737, z: 15.3125}
+  m_LocalPosition: {x: -33.6, y: -3.5, z: 15.3125}
   m_LocalScale: {x: 40.437004, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 810949335}
@@ -9002,7 +9004,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1984164372}
   - component: {fileID: 2117325854}
-  - component: {fileID: 2117325853}
   - component: {fileID: 2117325852}
   m_Layer: 0
   m_Name: Coffee Machine
@@ -9010,7 +9011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2117325852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9020,30 +9021,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117325851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
+  m_Script: {fileID: 11500000, guid: 681e39fc41220f34195fd4f87fb0b611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.02
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
---- !u!114 &2117325853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117325851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    sentences:
+    - "Ah! Where would I be without coffee?\r\n"
+    - "Mmm coffee.\r"
 --- !u!61 &2117325854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9076,6 +9060,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5868270450219919958}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2124159935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124159929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5868270450219919958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9126,7 +9122,7 @@ PrefabInstance:
     - target: {fileID: 5868270451873788397, guid: 7da840173c6f7a44388f8a0440bc5e00,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5868270451873788397, guid: 7da840173c6f7a44388f8a0440bc5e00,
         type: 3}
