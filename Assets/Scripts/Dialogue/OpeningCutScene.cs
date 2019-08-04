@@ -6,15 +6,15 @@ public class OpeningCutScene : MonoBehaviour
 {
     public DialogueManager dialogue;
     public string[] lines;
-    private bool doneTalking;
+    public static bool doneTalking = false;
     // Start is called before the first frame update
     void Start() 
     {
         Debug.Log("start");
-    }
-    void OnTriggerEnter2D(Collider2D other) 
-    {
+
         dialogue.OpeningandClosing(lines);
+
+        //doneTalking = true;
     }
 
     void LateUpdate() 
@@ -22,6 +22,7 @@ public class OpeningCutScene : MonoBehaviour
         if (doneTalking) 
         {
             FadeOut.CallFade(sceneChange: true);
+            doneTalking = false;
         }
     }
 }

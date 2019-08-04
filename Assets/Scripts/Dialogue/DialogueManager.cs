@@ -33,10 +33,13 @@ public class DialogueManager : MonoBehaviour
 
     public void OpeningandClosing(string[] words) 
     {
+        
+        sentences = new Queue<string>();
         var d = new Dialogue();
         d.sentences = words;
 
         StartDialogue(d);
+        DisplayNextSentence();
     }
 
    public void DisplayNextSentence ()
@@ -77,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         panel.enabled = false;
         InteractableObject.inZone = true;
+        OpeningCutScene.doneTalking = true;
         GameObject.Find("Player").GetComponent<Movement>().enabled = true;
 	}
 

@@ -467,14 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935898a058f9d4cffbf75881dbe2a465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 179244468}
-  index: 0
-  words: []
-  waitSpeed: 0.05
-  proceed: {fileID: 1928242881}
-  show: 0
-  isSO: 0
-  panel: {fileID: 224279142}
 --- !u!1 &224279140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9072,8 +9064,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38f34b19b151d45a1519a144a342b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  lines: []
+  dialogue: {fileID: 317445905}
+  lines:
+  - '*Yawn*'
+  - Huh? what's this?
+  - A note?
+  - "Note: \tIt's been such a long time. I'm writing this down in case I forget. I
+    left it in the garage."
+  - "The garage..? What could it possibly be in there\u2026?"
 --- !u!114 &2124159935
 MonoBehaviour:
   m_ObjectHideFlags: 0
