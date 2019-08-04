@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
 
     public static Vector2 playerLocation;
 
+   public Animator anim;
+
     private static bool switchFloor;
 
 
@@ -30,6 +32,7 @@ public class Movement : MonoBehaviour
         copy = floorLocations;
         // Locate the player's rigidbody2D component for the rb2d variable.
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        anim = gameObject.GetComponent<Animator>();
         playerLocation = this.transform.position;
     }
 
@@ -39,6 +42,12 @@ public class Movement : MonoBehaviour
         // Take in x-direction input and affect the player's x-direction speed through rb2d.
         playerVelocity.x = Input.GetAxis("Horizontal") * maxWalkSpeed; 
         rb2d.velocity = playerVelocity;
+
+        if (playerVelocity.x != 0) {
+            anim.SetBool("isWalking", true);
+        } else {
+            anim.SetBool("isWalking", false);
+        }
         
         if (switchFloor) 
         {
