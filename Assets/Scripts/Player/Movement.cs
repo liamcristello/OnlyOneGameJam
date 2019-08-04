@@ -22,6 +22,8 @@ public class Movement : MonoBehaviour
 
     private static bool switchFloor;
 
+    private bool facingRight = false;
+
 
     private static int floor = 0; // 0 = bedroom, 1 = first, 2 = second, 3 = third
 
@@ -46,9 +48,11 @@ public class Movement : MonoBehaviour
 
         Debug.Log("Current Scene: " + SceneManager.GetActiveScene().buildIndex);
 
-        if (playerVelocity.x != 0) {
+        if (playerVelocity.x > 1 || playerVelocity.x < 0 ) {
             anim.SetBool("isWalking", true);
-        } else {
+        } 
+        else 
+        {
             anim.SetBool("isWalking", false);
         }
         
@@ -57,6 +61,19 @@ public class Movement : MonoBehaviour
             this.transform.position = playerLocation;
             switchFloor = false;
         }
+           if (playerVelocity.x > 0 && !facingRight || playerVelocity.x < 0 && facingRight)
+        {
+            Flip();
+        }
+    }
+
+    //flips the player's sprite
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     public static void ChangeFloors(bool moveUp) // true for yes

@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public Image panel; 
     private Queue<string> sentences;
 
+    private bool firstScene = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,7 @@ public class DialogueManager : MonoBehaviour
 
     public void OpeningandClosing(string[] words) 
     {
-        
+        firstScene = true;
         sentences = new Queue<string>();
         var d = new Dialogue();
         d.sentences = words;
@@ -77,10 +79,14 @@ public class DialogueManager : MonoBehaviour
 
 	void EndDialogue()
 	{
+        if (firstScene) {
+            OpeningCutScene.doneTalking = true;
+            firstScene = false;
+        }
+
         dialogueText.text = "";
         panel.enabled = false;
         InteractableObject.inZone = true;
-        OpeningCutScene.doneTalking = true;
         GameObject.Find("Player").GetComponent<Movement>().enabled = true;
 	}
 

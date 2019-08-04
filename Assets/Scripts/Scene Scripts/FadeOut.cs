@@ -29,7 +29,8 @@ public class FadeOut : MonoBehaviour
         if (sceneChange) 
         {
             Debug.Log("Change scenes!");
-            change = sceneChange;        
+            change = sceneChange;
+            return;        
         }
         
         //move the player up or down a level
@@ -44,8 +45,8 @@ public class FadeOut : MonoBehaviour
         Invoke("ChangeScene", 1f);
     }
 
-    void ChangeScene() {
-
+    void ChangeScene() 
+    {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
     }
@@ -83,8 +84,9 @@ public class FadeOut : MonoBehaviour
             hasPeaked = true;
         }
 
-        if (change)
+        if (change) {
             Debug.Log("Load the next scene.");
             LoadNextScene();
+        }
     }
 }
