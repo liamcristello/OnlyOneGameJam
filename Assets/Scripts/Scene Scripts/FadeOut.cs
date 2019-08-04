@@ -37,11 +37,11 @@ public class FadeOut : MonoBehaviour
 
     void LoadNextScene() 
     {
-        StartCoroutine(WaitFor(15f));
+        StartCoroutine(WaitFor());
     }
-    IEnumerator WaitFor(float delay) {
+    IEnumerator WaitFor() {
       
-        yield return new WaitForSeconds(delay);
+        yield return null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
