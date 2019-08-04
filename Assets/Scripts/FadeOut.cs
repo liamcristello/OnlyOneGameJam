@@ -39,15 +39,12 @@ public class FadeOut : MonoBehaviour
             }
             if (c.a <= 0) {
                 isFading = false;
+                hasPeaked = false;
             }
         }
 
         if (c.a >= 1) {
             hasPeaked = true;
         }
-    }
-
-    void CallFade() {
-
     }
 }
