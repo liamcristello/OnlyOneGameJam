@@ -796,10 +796,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721671818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a7067791ad845068d528844eb9334f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed76015d2ee0c3f4f87668aee430f5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: {fileID: 1917380148}
+  words:
+  - Proceed with story?
+  - Please
 --- !u!61 &1721671820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1008,10 +1010,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809966639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a7067791ad845068d528844eb9334f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cb7323713d9ed7459449f35de4375c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: {fileID: 2113031457}
+  words:
+  - Random interacton
+  - please work
+  - im begging you
 --- !u!1 &1917380147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,11 +1047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 179244468}
-  words:
-  - F
-  - In
-  - The
-  - Chat
   index: 0
   waitSpeed: 0.2
   proceed: {fileID: 1928242879}
@@ -1384,17 +1384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 179244468}
-  words:
-  - '"SO HEY"'
-  - '"Ye uhhhhhh"'
-  - '"EEE."'
-  - '"Ey"'
-  - '"eyyyyyyyy"'
-  - '"Okaley dokaley"'
-  - '"Q*bert"'
-  - '"Eggplant"'
-  - '"avocado"'
-  - '"Shut the fuck up, boomer"'
   index: 0
   waitSpeed: 0.1
   proceed: {fileID: 1928242879}
