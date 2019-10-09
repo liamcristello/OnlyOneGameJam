@@ -19,6 +19,19 @@ public class Menu : MonoBehaviour
     public void StartGame() 
     {
         SceneManager.LoadScene("OpeningScene");
-        Debug.Log("start");
+    }
+
+    void Update()
+    {
+        Debug.Log("hello");
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+        {
+            StartGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
     }
 }

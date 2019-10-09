@@ -6,18 +6,21 @@ public class InteractableObject : MonoBehaviour
 {
     public static bool inZone;
     private DialogueTrigger dialogue;
+    public GameObject e;
   
     void OnTriggerEnter2D (Collider2D other) 
    {
        // If the Collider2D belongs to the player
         if (other.gameObject.CompareTag("Object") || other.gameObject.CompareTag("StoryObject")) {
             inZone = true;
+            e.SetActive(true);
+            Debug.Log("hello");
         }
     }
 
     void OnTriggerStay2D (Collider2D other)
     {
-        if (inZone && Input.GetKeyDown(KeyCode.E)) 
+        if (inZone && Input.GetKey(KeyCode.E)) 
         {
             //Send to dialogue controller
             inZone = false; //keeps from restarting dialogue on each button press
@@ -38,6 +41,7 @@ public class InteractableObject : MonoBehaviour
         // If the Collider2D belongs to the player
         if (other.gameObject.CompareTag("Object") || other.gameObject.CompareTag("StoryObject")) {
             inZone = false;
+            e.SetActive(false);
         }
     }
 }

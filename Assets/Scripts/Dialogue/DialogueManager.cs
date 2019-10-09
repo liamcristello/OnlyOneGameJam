@@ -73,9 +73,15 @@ public class DialogueManager : MonoBehaviour
 		foreach (char letter in sentence.ToCharArray())
 		{
 			dialogueText.text += letter;
-			yield return null; //waits a single frame
+			yield return new WaitForSeconds(.02f);
 		}
 	}
+
+    IEnumerator Wait () 
+    {
+        yield return new WaitForSeconds(.5f);
+        InteractableObject.inZone = true;
+    }
 
 	void EndDialogue()
 	{
@@ -84,10 +90,11 @@ public class DialogueManager : MonoBehaviour
             firstScene = false;
         }
 
+        
         dialogueText.text = "";
-        panel.enabled = false;
-        InteractableObject.inZone = true;
         GameObject.Find("Player").GetComponent<Movement>().enabled = true;
+        panel.enabled = false;
+        StartCoroutine(Wait());
 	}
 
 }

@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
 
         Debug.Log("Current Scene: " + SceneManager.GetActiveScene().buildIndex);
 
-        if (playerVelocity.x > 1 || playerVelocity.x < 0 ) {
+        if (playerVelocity.x > 1 || playerVelocity.x < -1 ) {
             anim.SetBool("isWalking", true);
         } 
         else 
@@ -80,34 +80,23 @@ public class Movement : MonoBehaviour
     {
         switchFloor = true;
         Debug.Log("Moved from: " + playerLocation);
+        Debug.Log("Moved from: " + floor);
         
         if (moveUp && floor < 3)
             floor ++;
         if (!moveUp && floor > 0) 
             floor --;
         
-        switch (floor) 
-        {
-            case 0:
-                //move to bedroom
-                playerLocation = copy[0].transform.position;
-                break;
-            case 1:
-                //move to first floor
-                playerLocation = copy[1].transform.position;
-                break;
-            case 2:
-                //move to second floor
-                playerLocation = copy[2].transform.position;
-                break;
-            case 3:
-                //move to third floor
-                playerLocation = copy[3].transform.position;
-                break;
-            default:
-                Debug.Log("how");
-                break;
-        }
+        if (floor == 0 && moveUp)
+            playerLocation = copy[1].transform.position;
+        else if (floor == 1 && moveUp)
+            playerLocation = copy[2].transform.position;
+        else if (floor == 2 && moveUp)
+            playerLocation = copy[3].transform.position;
+        else if (floor == 3 && !moveUp)
+            playerLocation = copy[2].transform.position;
+
         Debug.Log("Moved to: " + playerLocation);
+        Debug.Log("Moved to: " + floor);
     }
 }
